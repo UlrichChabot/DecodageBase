@@ -1,0 +1,72 @@
+﻿<Window x:Class="DecodageBase64WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DecodageBase64WPF"
+        mc:Ignorable="d"
+        Title="Décodeur Base64" Height="476.442" Width="525" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Color x:Key="burgundi">#FF9201A8</Color>
+        <Color x:Key="Blanc">White</Color>
+        <Color x:Key="Canari">#FFFFC502</Color>
+        <Color x:Key="bleu">#FF00B8E4</Color>
+        <Color x:Key="maron">#FF441A04</Color>
+        <Color x:Key="bleu2">#FF00C7EC</Color>
+    </Window.Resources>
+    <Grid x:Name="Base" Background="#FFECECEC">
+
+        <StackPanel>
+            <StackPanel x:Name="logo" Orientation="Vertical">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="{DynamicResource bleu}"/>
+                </StackPanel.Background>
+                <TextBlock x:Name="Lechiffrelogo" Height="46.667" TextWrapping="Wrap" Text="Le Décodeur" FontSize="32" TextAlignment="Right" Margin="0,10,20,0">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{DynamicResource Blanc}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                <Rectangle x:Name="Separateurblanc" Height="5" StrokeThickness="5" Margin="0,-20,0,0">
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="{DynamicResource Blanc}"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle x:Name="Separateurmaron" Height="15" StrokeThickness="5" Margin="0,-8,0,0">
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="{DynamicResource maron}"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </StackPanel>
+            <StackPanel x:Name="Pitch" HorizontalAlignment="Left">
+                <TextBlock x:Name="pitch1" Height="30" TextWrapping="Wrap" Text="Chaine a décoder (en base64)" Width="513.466" FontSize="21.333" Margin="8,0,0,0">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{DynamicResource bleu2}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                <TextBox x:Name="tbChaine" HorizontalAlignment="Left" Width="503.351" Margin="8" Height="21.96"/>
+                <Grid Height="25.401" HorizontalAlignment="Center" Width="512.317">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="257*"/>
+                        <ColumnDefinition Width="256*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btValider" Content="Décoder" Click="btDecoder_Click" Margin="0,0.2,28.845,0.2" Width="83.983" HorizontalAlignment="Right" Height="25"/>
+                    <Button x:Name="btVider" Content="Vider" Click="btVider_Click" Margin="25.861,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="79.42" Height="25"/>
+                </Grid>
+                <TextBlock x:Name="tbInfo" HorizontalAlignment="Left" Margin="8,4,8,0" TextWrapping="Wrap" Width="504.835" Height="30">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="#FF00EC56"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+            </StackPanel>
+            <TextBox  x:Name="tbDecode" TextWrapping="Wrap"
+            	ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+            	ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="10,0" VerticalAlignment="Bottom" Height="238.662" />
+            <TextBlock x:Name="tbAuteur" HorizontalAlignment="Left" Margin="449.585,0,0,0" TextWrapping="Wrap" Text="Ulrich Chabot" VerticalAlignment="Top" FontSize="9" RenderTransformOrigin="0.674,-1.13" Height="12" d:LayoutOverrides="LeftPosition, RightPosition">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="#FF00C7EC"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Window>

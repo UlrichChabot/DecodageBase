@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodageBase64Console", "DecodageBase64\DecodageBase64Console.csproj", "{57EA6657-59C4-42FC-8851-6D8ADBCC70F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodageBase64WPF", "DecodageBase64WPF\DecodageBase64WPF.csproj", "{7AB74909-BB22-4743-BDF7-B648AA776587}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57EA6657-59C4-42FC-8851-6D8ADBCC70F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EA6657-59C4-42FC-8851-6D8ADBCC70F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EA6657-59C4-42FC-8851-6D8ADBCC70F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EA6657-59C4-42FC-8851-6D8ADBCC70F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB74909-BB22-4743-BDF7-B648AA776587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB74909-BB22-4743-BDF7-B648AA776587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB74909-BB22-4743-BDF7-B648AA776587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB74909-BB22-4743-BDF7-B648AA776587}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
